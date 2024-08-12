@@ -6,7 +6,7 @@ import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
-import { headerVariants, subHeaderVariants } from "./animation";
+import { headerVariants } from "./animation";
 import { HeaderContent } from "./header-content";
 
 export const Header = () => {
@@ -18,19 +18,19 @@ export const Header = () => {
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious();
 
-        if (latest > previous! && latest > 350) {
+        if (latest > previous! && latest > 250) {
             setIsHidden(true);
         } else {
             setIsHidden(false);
         }
 
-        if (latest > 250) {
+        if (latest > 50) {
             setIsPastHero(true);
         } else {
             setIsPastHero(false);
         }
 
-        if (latest <= 250) setIsPastHero(false);
+        if (latest <= 50) setIsPastHero(false);
     });
 
     return (
@@ -38,13 +38,13 @@ export const Header = () => {
             variants={headerVariants}
             initial="close"
             animate={isHidden ? "close" : "open"}
-            className="max-w-screen fixed z-50 h-20 w-full backdrop-blur-2xl"
+            className="max-w-screen fixed z-50 h-20 w-full"
         >
             {/* Sub-header to animate the background & border colors on events */}
             <div
                 className={cn(
-                    "h-full w-full p-12 transition-all duration-500 ease-in md:px-16 lg:px-24 xl:px-32",
-                    isPastHero && "shadow-sm backdrop-blur-3xl",
+                    "h-full w-full bg-background p-6 transition-all duration-500 ease-in md:px-16 lg:px-24 xl:px-32",
+                    isPastHero && "shadow-sm",
                 )}
             >
                 <HeaderContent />

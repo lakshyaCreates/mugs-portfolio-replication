@@ -23,9 +23,7 @@ export const MenuCurveSvg = () => {
     return (
         <svg
             className={cn(
-                "absolute right-[-100px] top-0 h-full w-[100px] rotate-180 fill-foreground stroke-none dark:fill-primary-foreground sm:hidden md:block",
-                // variant === "menu" && "right-[-99px] rotate-180",
-                // variant === "contact" && "left-[-99px] rotate-0",
+                "absolute right-[-99px] top-0 h-full w-[100px] rotate-180 fill-foreground stroke-none dark:fill-primary-foreground sm:hidden md:block",
             )}
         >
             <motion.path

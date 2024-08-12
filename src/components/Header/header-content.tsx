@@ -1,11 +1,11 @@
 import Link from "next/link";
 
+import { CtaButton } from "../cta-button";
+
 import { data } from "./header-data";
 import { Nav } from "./nav";
 
 export const HeaderContent = () => {
-    // const isMd = useMediaQuery("min-width: 768px");
-    // const isLg = useMediaQuery("min-width: 1024px");
     const { name, logo: Logo, cta } = data;
 
     const firstLetterOfName = name.charAt(0);
@@ -32,15 +32,7 @@ export const HeaderContent = () => {
                     const { title, url } = item;
 
                     // Supposing every CTA Button is a redirect link.
-                    return (
-                        <Link
-                            key={index}
-                            href={url}
-                            className="bg-mugs-orange-400 rounded px-4 py-1.5 text-white transition-transform duration-300 ease-in-out hover:scale-105"
-                        >
-                            {title}
-                        </Link>
-                    );
+                    return <CtaButton key={index} title={title} url={url} />;
                 })}
             </div>
         </div>
