@@ -7,12 +7,12 @@ export const Hero = () => {
     return (
         <section
             id=""
-            className="font-poppins flex h-full w-full flex-col items-center justify-between space-y-6 px-12 md:flex-row md:px-16 lg:gap-8 lg:space-y-0 lg:px-24 xl:px-32"
+            className="flex h-full w-full flex-col items-center justify-between space-y-6 px-12 font-poppins md:flex-row md:px-16 lg:justify-center lg:gap-24 lg:space-y-0 lg:px-24 xl:px-32"
         >
-            <div className="flex h-full w-full flex-col items-center justify-center space-y-4 text-center md:items-start md:justify-start md:text-start">
+            <div className="flex h-full w-full flex-col items-center justify-center space-y-4 text-center md:w-[40%] md:items-start md:justify-start md:text-start">
                 <div>
                     <p className="text-lg font-medium">Hi, I am</p>
-                    <p className="text-mugs-orange-500 text-lg font-semibold">
+                    <p className="text-lg font-semibold text-mugs-orange-500">
                         Muhammad Umair
                     </p>
                     <div className="text-5xl font-bold">
@@ -20,7 +20,7 @@ export const Hero = () => {
                         <h2 className="md:pl-32">Designer</h2>
                     </div>
                 </div>
-                <p>
+                <p className="w-4/5">
                     Lorem ipsum dolor sit amet consectetur. Tristique amet sed
                     massa nibh lectus netus In. Allquet donec morbi convallis
                     pretium. Turpis tempus pharetra
@@ -29,7 +29,7 @@ export const Hero = () => {
                     <CtaButton title="Hire Me" url="/" />
                 </div>
             </div>
-            <div className="flex h-full w-full flex-col items-center justify-center md:items-end">
+            <div className="flex h-full w-fit flex-col items-center justify-center md:items-end">
                 <div className="flex flex-col items-center justify-center space-y-4">
                     <Image
                         width={1000}

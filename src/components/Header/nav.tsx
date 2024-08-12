@@ -13,11 +13,7 @@ import { Menu } from "./menu";
 import { useMenu } from "@/hooks/use-menu";
 
 export const Nav = () => {
-    const { isMenuOpen, open, setIsMenuOpen } = useMenu();
-
-    useEffect(() => {
-        console.log(isMenuOpen);
-    }, [isMenuOpen]);
+    const { isMenuOpen, setIsMenuOpen } = useMenu();
 
     const { navItems } = data;
 
@@ -48,7 +44,7 @@ export const Nav = () => {
                 onClick={() => setIsMenuOpen(true)}
                 size={"sm"}
                 variant={"ghost"}
-                className="text-mugs-black-300 block lg:hidden"
+                className="block text-mugs-black-300 lg:hidden"
             >
                 <CgMenuRight className="size-8" />
             </Button>
