@@ -1,5 +1,8 @@
+import { LogoSvg } from "../logo-svg";
+
 export const data = {
-    logo: "./logo.svg",
+    logo: LogoSvg,
+    name: "Mumair",
     navItems: [
         {
             id: 1,
@@ -33,6 +36,7 @@ export const data = {
         },
     ],
     cta: [
+        // TODO: Add a dump file in the public dir & implement download functionality for CV
         {
             title: "Download CV",
             url: "./cv.pdf",

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { poppins } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
+import { Header } from "@/components/Header/header";
 import { ModeToggle } from "@/components/mode-toggle";
 
 import "./globals.css";
@@ -31,7 +32,8 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <main>{children}</main>
+                    <Header />
+                    <main className="mt-20">{children}</main>
                     <div className="fixed bottom-10 right-12 z-50">
                         <ModeToggle />
                     </div>
