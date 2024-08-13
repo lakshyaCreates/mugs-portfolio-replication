@@ -29,6 +29,18 @@ export const data: ProjectDataProps[] = [
         category: Category["Web Design"],
     },
     {
+        title: "Banner Design",
+        url: "/",
+        image: "/images/projects/aircalling-design.png",
+        category: Category["Graphic Design"],
+    },
+    {
+        title: "Car App Interface Design",
+        url: "/",
+        image: "/images/projects/aircalling-design.png",
+        category: Category["UI/UX"],
+    },
+    {
         title: "Business Landing Page Design",
         url: "/",
         image: "/images/projects/business-design.png",

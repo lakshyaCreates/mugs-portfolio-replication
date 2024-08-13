@@ -25,7 +25,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={cn("fonts.poppins", poppins.variable)}>
+            <body
+                className={cn(
+                    "fonts.poppins overflow-x-hidden",
+                    poppins.variable,
+                )}
+            >
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"

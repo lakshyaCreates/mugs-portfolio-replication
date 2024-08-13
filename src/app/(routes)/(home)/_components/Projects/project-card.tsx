@@ -22,7 +22,9 @@ export const ProjectCard = ({
                 className="h-[320px] w-full rounded-md object-cover"
             />
             <div className="space-y-2 px-2 pb-4">
-                <p className="pt-4 text-xs text-orange-500">{category}</p>
+                <p className="pt-4 text-xs font-medium text-orange-500">
+                    {category}
+                </p>
                 <h3 className="font-semibold">{title}</h3>
             </div>
         </Link>
