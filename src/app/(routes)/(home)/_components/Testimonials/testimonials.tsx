@@ -5,7 +5,7 @@ import { TestimonialsContainer } from "./testimonials-container";
 export const Testimonials = () => {
     return (
         <section
-            id="projects"
+            id="testimonials"
             className="xl:px-321 flex h-full w-full flex-col items-center justify-center space-y-6 px-12 text-center font-poppins md:px-16 lg:px-24"
         >
             <SectionHeading text="Testimonials" />

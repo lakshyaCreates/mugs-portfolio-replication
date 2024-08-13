@@ -27,7 +27,7 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={cn(
-                    "fonts.poppins overflow-x-hidden",
+                    "fonts.poppins overflow-x-hidden selection:bg-orange-400",
                     poppins.variable,
                 )}
             >
@@ -38,7 +38,7 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <Header />
-                    <main className="mt-20">{children}</main>
+                    <main className="mt-24">{children}</main>
                     <div className="fixed bottom-10 right-12 z-50">
                         <ModeToggle />
                     </div>

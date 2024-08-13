@@ -25,9 +25,7 @@ export const Hero = () => {
                     massa nibh lectus netus In. Allquet donec morbi convallis
                     pretium. Turpis tempus pharetra
                 </p>
-                <div>
-                    <CtaButton title="Hire Me" url="/" />
-                </div>
+                <CtaButton title="Hire me" blank url="/" />
             </div>
             <div className="flex h-full w-fit flex-col items-center justify-center md:items-end">
                 <div className="flex flex-col items-center justify-center space-y-4">

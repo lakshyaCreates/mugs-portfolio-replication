@@ -19,7 +19,7 @@ export const SocialPallete = ({ className }: { className?: string }) => {
                     <Link href={url} key={index} className="group">
                         <Icon
                             className={cn(
-                                "size-5 transition-all duration-200 ease-in group-hover:scale-125",
+                                "size-5 transition-all duration-200 ease-in group-hover:scale-[1.15]",
                                 className,
                             )}
                         />

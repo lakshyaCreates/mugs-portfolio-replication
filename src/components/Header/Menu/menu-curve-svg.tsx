@@ -31,7 +31,6 @@ export const MenuCurveSvg = () => {
                 initial="initial"
                 animate="enter"
                 exit="exit"
-                className={"drop-shadow-2xl"}
             ></motion.path>
         </svg>
     );

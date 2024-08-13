@@ -7,7 +7,7 @@ export const data = {
         {
             id: 1,
             title: "Home",
-            url: "/",
+            url: "",
         },
         {
             id: 2,
@@ -36,7 +36,6 @@ export const data = {
         },
     ],
     cta: [
-        // TODO: Add a dump file in the public dir & implement download functionality for CV
         {
             title: "Download CV",
             url: "./cv.pdf",
