@@ -2,6 +2,8 @@ import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
+import { ContactForm } from "./contact-form";
+
 export const Contact = () => {
     return (
         <section
@@ -13,15 +15,11 @@ export const Contact = () => {
                 Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
                 nibh lectus netus in. Aliquet donec morbi convallis pretium
             </p>
-            <div className="flex h-20 w-[75%] flex-col items-center justify-between gap-3 md:flex-row">
-                <Input
-                    placeholder="Enter Your Email"
-                    className="rounded-lg dark:bg-primary dark:text-black"
-                />
-                <Button className="w-full rounded-lg bg-orange-400 font-semibold text-secondary transition-all duration-150 ease-in hover:scale-[1.03] hover:bg-orange-500 dark:text-primary md:w-fit">
-                    Contact Me
-                </Button>
-            </div>
+            {/* <div className="flex h-20 w-[75%] flex-col items-center justify-between gap-3 md:flex-row">
+                
+                
+            </div> */}
+            <ContactForm />
         </section>
     );
 };

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
+import { Toaster } from "sonner";
 
 import { poppins } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
@@ -9,8 +10,6 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 // TODO: Add all the advanced metadata suitable
 export const metadata: Metadata = {
@@ -42,6 +41,7 @@ export default function RootLayout({
                     <div className="fixed bottom-10 right-12 z-50">
                         <ModeToggle />
                     </div>
+                    <Toaster richColors position="bottom-center" />
                 </ThemeProvider>
             </body>
         </html>
